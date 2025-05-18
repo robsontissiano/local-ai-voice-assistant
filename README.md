@@ -21,18 +21,18 @@ Visit: http://localhost:5050
 
 
 
-# Assistant Service (Django)
+# Assistant Service (Django) -> Work in progress
 
 This is the main backend for the local AI assistant. It includes:
 
 - REST endpoint to ask questions
-- File upload for training from PDF
-- URL ingestion
+- AI training:
+    - (WORK IN PROGRESS) File upload for training from PDF
+    - (TO DO) URL ingestion
+
 - Voice assistant loop using:
   - Vosk (speech-to-text)
   - pyttsx3 (text-to-speech)
-
-
 
 
 
@@ -49,7 +49,7 @@ wget https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip
 unzip vosk-model-small-en-us-0.15.zip
 ```
 
-3. Run the voice assistant:
+3. Run the voice assistant (inside the voice_models folder):
 ```bash
 python voice_chat.py
 ```

@@ -6,7 +6,7 @@ import json
 import requests
 
 q = queue.Queue()
-model = vosk.Model("vosk-model-small-en-us-0.15")
+model = vosk.Model("voice_models/vosk-model-small-en-us-0.15")
 rec = vosk.KaldiRecognizer(model, 16000)
 tts = pyttsx3.init()
 

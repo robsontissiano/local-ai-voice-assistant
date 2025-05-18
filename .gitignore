@@ -136,3 +136,5 @@ csv
 /tmp
 *.csv
 
+# voice models folder
+voice_models
