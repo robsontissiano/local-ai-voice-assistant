@@ -136,5 +136,6 @@ csv
 /tmp
 *.csv
 
-# voice models folder
+# voice models
 voice_models
+vosk-model-small-en-us-0.15.zip
