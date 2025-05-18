@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Assistant</title>
+</head>
+<body>
+    <h1>Ask the Assistant</h1>
+    <form method="post">{% csrf_token %}
+        <textarea name="prompt" rows="4" cols="80">{{ prompt|default:'' }}</textarea><br>
+        <input type="submit" value="Ask">
+    </form>
+    {% if response %}
+        <h2>Response:</h2>
+        <pre>{{ response }}</pre>
+    {% endif %}
+</body>
+</html>
